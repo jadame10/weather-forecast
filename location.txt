@@ -1,0 +1,7 @@
+
+          { 
+            result.data.data.timelines[0].intervals.filter((item) => item.startTime.split('T')[0] === location).map((item, i)=>(
+            <div key = {i}>
+               <div>{item.startTime.split('T')[1].split('Z')}</div>
+             </div>
+            ))};
